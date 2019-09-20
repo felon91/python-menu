@@ -25,7 +25,6 @@
 }
 
 .video__iframe {
-  @include adaptive-video;
 
   iframe {
     border: none;

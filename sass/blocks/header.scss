@@ -1,18 +1,12 @@
 .header {
-  display: flex;
-  justify-content: center;
-  flex-shrink: 0;
-  flex-basis: auto;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__left {
-
-  a {
-    display: block;
-  }
-
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .header__right {
@@ -25,8 +19,15 @@
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
-  display: flex;
-
+  color: #FDCF36;
+  margin-right: 17%;
+  span {
+    color: $white;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
   img {
     flex-shrink: 0;
   }

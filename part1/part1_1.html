@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Веб-дизайн + верстка</title>
+	<title>PYTHON Полное руководство</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<link rel="stylesheet" href="../css/style.min.css" type="text/css" />
@@ -20,9 +20,6 @@
 			<nav class="content__left">
 				<ul class="content__menu menu">
 					<li class="menu__element">
-						<a class="menu__link" href="../../index.html">Главная</a>
-					</li>
-					<li class="menu__element">
 						<a target="_blank" class="menu__link" href="https://webformyself.com/nashi-kursy/">Другие инфопродукты</a>
 					</li>
 					<li class="menu__element">
@@ -36,11 +33,13 @@
 			<main class="content__right">
 				<div class="video content__video">
 					<div class="video__top">
-						<p class="video__type">Блок 1. Figma от А до Я</p>
-						<p class="video__name">Скачивание программы</p>
+						<p class="video__type">Раздел 1. Изучение Python</p>
+						<p class="video__name">Введение</p>
 					</div>
 					<div class="video__iframe">
-						<iframe src="1.mp4" allowfullscreen width="815" height="468"></iframe>
+						<video poster="/path/to/poster.jpg" id="player" width="815" height="468" playsinline controls>
+							<source src="1.mp4" type="video/mp4" />
+						</video>
 					</div>
 					<div class="video__bottom">
 						<a style="display: none" class="video__prev" href="#">Предыдущий урок</a>
@@ -56,16 +55,22 @@
 			<div class="footer__block">
 				<p class="footer__copy">Все права защищены.<br> WebForMySelf, &copy; 2019</p>
 				<p class="footer__zakon">«Любое незаконное использование настоящего информационного<br> продукта преследуется по закону»</p>
-				<p class="footer__author">Автор курса:<br>Даниил Волосатов<br>Булыга Денис</p>
+				<p class="footer__author">Автор курса:<br>Андрей Кудлай</p>
 				<a target="_blank" href="https://webformyself.com/">
 					<img src="../img/logo.png" alt="WebForMyself">
 				</a>
 			</div>
 			<p class="footer__graph">
 				*Иконки взяты с сайта <a target="_blank" href="https://www.flaticon.com/">www.flaticon.com</a>
+				<br>
+				*Используется Plyr плеер с сайта <a target="_blank" href="https://plyr.io/">www.plyr.io</a>
 			</p>
 		</div>
 	</footer>
 </div>
+<script src="../js/all.min.js"></script>
+<script>
+	const player = new Plyr('#player');
+</script>
 </body>
 </html>
