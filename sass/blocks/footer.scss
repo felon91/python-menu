@@ -1,0 +1,44 @@
+.footer {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+}
+
+.footer__wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.footer__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  > p {
+    font-size: 14px;
+  }
+
+  > a {
+    display: block;
+  }
+
+}
+
+.footer__graph {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  color: $white;
+  font-size: 14px;
+
+  a {
+    color: $white;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+  }
+
+}

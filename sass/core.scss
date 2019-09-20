@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+	color: $white;
+	height: 100%;
+}
+
+body {
+	font-family: "formular", "Arial", sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	hyphens: auto;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	height: 100%;
+}
+
+.container {
+	@include min-max(320px, 100%, 0);
+	background: #334B63;
+}
+
+.wrap {
+	@include min-max(980px, 1170px, 30px);
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}

@@ -1,0 +1,93 @@
+.video {
+
+}
+
+.video__top {
+  background-color: $white;
+  border-radius: 8px 8px 0 0;
+  padding: 10px 0;
+}
+
+.video__type {
+  color: $black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.video__name {
+  color: $black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.video__iframe {
+  @include adaptive-video;
+
+  iframe {
+    border: none;
+  }
+
+}
+
+.video__bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+}
+
+.video__prev {
+  color: $black;
+  text-decoration: none;
+  padding-left: 35px;
+  background: url('../img/prev.png') left center no-repeat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  transition-duration: 500ms;
+  transition-property: color;
+
+  &:hover {
+    color: $activeText;
+  }
+
+}
+
+.video__list {
+  color: $black;
+  text-decoration: none;
+  padding-left: 35px;
+  background: url('../img/list.png') left center no-repeat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  transition-duration: 500ms;
+  transition-property: color;
+
+  &:hover {
+    color: $activeText;
+  }
+
+}
+
+.video__next {
+  color: $black;
+  text-decoration: none;
+  padding-right: 35px;
+  background: url('../img/next.png') calc(100% - 1px) center no-repeat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  transition-duration: 500ms;
+  transition-property: color;
+
+  &:hover {
+    color: $activeText;
+  }
+
+}
